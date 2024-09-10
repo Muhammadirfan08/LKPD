@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 10px;
+      background: #dcdede;
+    }
+
+    /* Header/Blog Title */
+    .header {
+      padding: 30px;
+      text-align: center;
+      background: #4f3712;
+    }
+
+    .header h1 {
+      font-size: 50px;
+    }
+
+    /* Style the top navigation bar */
+    .topnav {
+      overflow: hidden;
+      background-color: #fcf7f7;
+    }
+
+    /* Style the topnav links */
+    .topnav a {
+      float: left;
+      display: block;
+      color: #000000;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    /* Change color on hover */
+    .topnav a:hover {
+      background-color: #ffcc01;
+      color: rgb(0, 0, 0);
+    }
+
+    /* Create two unequal columns that floats next to each other */
+    /* Left column */
+    .leftcolumn {
+      float: left;
+      width: 75%;
+    }
+
+    /* Right column */
+    .rightcolumn {
+      float: left;
+      width: 25%;
+      background-color: #4f3712;
+      padding-left: 20px;
+    }
+
+    /* Fake image */
+    .fakeimg {
+      background-color: #4f3712;
+      width: 100%;
+      padding: 20px;
+    }
+
+    /* Add a card effect for articles */
+    .card {
+      background-color: rgb(251, 255, 255);
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    /* Clear floats after the columns */
+    .row::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: rgb(255, 255, 255) margin-top: 20px;
+    }
+
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
+
+      .leftcolumn,
+      .rightcolumn {
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 400px) {
+      .topnav a {
+        float: none;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body align="center">
+
+  <div class="header">
+    <h1>Website M.irfan</h1>
+    <p>Resize the browser window to see the effect.</p>
+  </div>
+
+  <div class="topnav">
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#" style="float:right">Link</a>
+  </div>
+
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>Chevrolet Bel Air</h2>
+        <h5>Mobil klasik yang punya harga mahal lainnya ada Chevrolet Bel Air. Mobil satu ini menjadi salah satu ikon
+          mobil klasik dan antik di berbagai dunia.</h5>
+        <div class="" style="height:200px;"><img src="c:\Users\LENOVO\Pictures\mobil-klasik-harga-mahal-carmudi5.jpg"
+            height="290" width="690"></div>
+        <p>Some text..</p>
+        <p>Chevrolet Bel Air sendiri memiliki beberapa generasi. Generasi pertama diproduksi pada 1949 sampai 1954,
+          kemudian generasi kedua dibuat pada 1954 sampai 1957.Sedangkan generasi ketiga dibuat pada 1957 sampai 1958,
+          generasi keempat dibuat pada 1958 sampai 1960, dan generasi kelima dibuat pada 1961 sampai 1964.
+          Dari seluruh model, generasi kedua menjadi salah satu favorit terutama tahun 1956 dan 1957. Soal harga, mobil
+          klasik ini sudah memiliki banderol harga yang sangat mahal di kisaran Rp600 jutaan sampai lebih dari Rp1
+          miliar. Wow! .</p>
+      </div>
+      <div class="card">
+        <h2>Toyota Celica</h2>
+        <h5>Di urutan mobil klasik dengan harga mahal selanjutnya ada Toyota Celica. Di Indonesia Celica terkenal
+          sebagai mobil sport dengan populasi yang sedikit.</h5>
+        <div class="" style="height:200px;"><img src="c:\Users\LENOVO\Pictures\mobil-klasik-harga-mahal-carmudi6.jpg"
+            height="290" width="690"></div>
+        <p>Some text..</p>
+        <p>Bagi pecinta mobil klasik biasanya mereka akan mengincar Toyota Celica generasi pertama. Generasi pertama ini
+          diproduksi pada tahun 1970 sampai 1977 dan menjadi kompetitor dari Mitsubishi Colt Galant GTO.
+          Jumlahnya di Indonesia pun sangat sedikit, sehingga kisaran harganya sangat gelap. Menurut beberapa sumber
+          mobil ini punya harga lebih dari Rp350 jutaan
+          .</p>
+      </div>
+    </div>
+    <div class="rightcolumn">
+      <div class="card">
+        <h2>Morris Mini / Mini Cooper</h2>
+        <div class="" style="height:200px;"><img src="c:\Users\LENOVO\Pictures\mobil-klasik-harga-mahal-carmudi4.jpg"
+            height="100" width="200"></div>
+        <p>Morris Mini merupakan generasi pertama dari Mini Cooper yang biasa kita kenal. Jika lupa bentuknya Carmudian
+          bisa mengingat kendaraan yang digunakan oleh tokoh Mr Bean.
+          Generasi pertamanya diproduksi pada tahun 1959 sampai 1967. Lalu generasi keduanya diproduksi dari 1967 sampai
+          1970 dan generasi ketiga diproduksi 1969 sampai 1976. Terakhir ada generasi yang sering disebut sebagai last
+          edition oleh pecinta di Indonesia dengan rentang produksi 1976 sampai 2000. Empat generasi ini yang kerap
+          dicari kolektor.
+          Soal harga, Morris Mini dan Mini Cooper punya kisaran harga di Rp250 jutaan sampai Rp750 jutaan. Gimana, bikin
+          geleng-geleng kepala kan mobil kecil ini?</p>
+      </div>
+      <div class="card">
+        <h3>Popular Post</h3>
+        <div class="" style="height:120px;">
+          <p><img src="c:\Users\LENOVO\Pictures\1983-mercedes-benz-300-td-station-wagon-3-1024x683.jpg" height="90"></p>
+        </div>
+        <div class="" style="height:120px;">
+          <p><Img src="c:\Users\LENOVO\Pictures\mobil-klasik-harga-mahal-carmudi8.jpg" height="90"></p>
+        </div>
+        <div class="" style="height:120px;">
+          <p><Img src="c:\Users\LENOVO\Pictures\mobil-klasik-harga-mahal-carmudi3.jpg" height="90"></p>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Follow Me</h3>
+        <p>Some text..</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <h2>Footer</h2>
+  </div>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    img {
+      float: right;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>MOBIL KLASIK</h2>
+
+  <p>In this example, the image will float to the right in the paragraph, and the text in the paragraph will wrap around
+    the image.</p>
+
+  <p><img src="c:\Users\LENOVO\Pictures\mobil-klasik-harga-mahal-carmudi2.jpg" Pineapple"
+      style="width:170px;height:170px;margin-left:15px;">
+      Untuk mobil klasik sendiri merupakan mobil-mobil dengan tahun pembuatan dibawah 1970-an. Mobil akan dinilai semakin klasik apabila umurnya semakin tua. Sementara untuk mobil retro sendiri merupakan mobil-mobil yang dibuat di kisaran tahun 1980-an hingga tahun 1990-an..</p>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .flex-container {
+      display: flex;
+      flex-wrap: nowrap;
+      background-color: rgb(45, 36, 12);
+    }
+
+    .flex-container>div {
+      background-color: #fffdfd;
+      width: 100px;
+      margin: 10px;
+      text-align: center;
+      line-height: 75px;
+      font-size: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Flexible Boxes</h1>
+
+  <div class="flex-container">
+    <div><img src="c:\Users\LENOVO\Pictures\chrome (1).jpg" alt="100" width="100"></div>
+    <div><img src="c:\Users\LENOVO\Pictures\microsoft (1).jpg" alt="100" width="100"></div>
+    <div><img src="c:\Users\LENOVO\Pictures\cfirefox(1).jpg" alt="100" width="100"></div>
+    <div><img src="c:\Users\LENOVO\Pictures\safari.jpg" alt="100" width="100"></div>
+    <div><img src="c:\Users\LENOVO\Pictures\opera.jpg" alt="100" width="100"></div>
+    <div><img src="c:\Users\LENOVO\Pictures\vs (1).jpg" alt="100" width="100"></div>
+    <div><img src="c:\Users\LENOVO\Pictures\spotify.jpg" alt="100" width="100"></div>
+    <div><img src="c:\Users\LENOVO\Pictures\instragram.jpg" alt="100" width="100"></div>
+  </div>
+
+  <p>Try to resize the browser window.</p>
+  <p>A container with "flex-wrap: nowrap;" will never wrap its items.</p>
+  <p><strong>Note:</strong> jhon denver-take me home, country roads.</p>
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <style>
+  .item1 { grid-area: header; }
+  .item2 { grid-area: menu; }
+  .item3 { grid-area: main; }
+  .item4 { grid-area: right; }
+  .item5 { grid-area: footer; }
+  
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu main main main right right'
+      'menu footer footer footer footer footer';
+    gap: 10px;
+    background-color: #60510b;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  </style>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html>
+    
+    <body>
+    
+      <audio controls autoplay>
+        <source src="c:\Users\LENOVO\Downloads\John Denver - Take Me Home, Country Roads (Lyrics).mp3" type="audio/ogg">
+        <source src="c:\Users\LENOVO\Downloads\John Denver - Take Me Home, Country Roads (Lyrics).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    
+    </body>
+    
+    </html>
+
+  <h1>Grid Layout</h1>
+  
+  <p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning:</p>
+  
+  <div class="grid-container">
+    <div class="item1">M IRFAN FADILLAH</div>
+    <div class="item2"><img src="c:\Users\LENOVO\Pictures\Pictures\OIP (2).jpg" alt="400" width="400"></div>
+    <div class="item3">WATER DANCE</div>  
+    <div class="item4">XI</div>
+    <div class="item5">SMKN 2 SUBANG</div>
+  </div>
+  
+  </body>
+  </html>
+  
+</body>
+
+</html>
